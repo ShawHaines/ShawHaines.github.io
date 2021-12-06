@@ -18,7 +18,7 @@
 
 
 
-<title>HelloWorld | Haohai Shi</title>
+<title>OCR on PDF Files | Haohai Shi</title>
 
 
 
@@ -127,12 +127,12 @@
         <div class="post-title">
             
             
-                HelloWorld
+                OCR on PDF Files
             
             
         </div>
         <span class="post-date">
-            Mar 1, 2021
+            Aug 25, 2021
         </span>
     </div>
     <div class="post-img">
@@ -142,26 +142,52 @@
     </div>
 </div>
     <div class="post-content">
-    <hr>
-<h2 id="title-Hello-World"><a href="#title-Hello-World" class="headerlink" title="title: Hello World"></a>title: Hello World</h2><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [post|page|draft] <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p>if the webpage looks raw, try to clean the directory with </p>
-<p><img src="./27a1d45ecba6fe8474e8ad77989ba912.png" alt="27a1d45ecba6fe8474e8ad77989ba912.png"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>then try deploying again.</p>
-<p>Hmmm, easy.</p>
+    <p>Use Acrobat to export the pdf file to single page tiff image.</p>
+<p><img src="./Untitled.png" alt="Untitled"></p>
+<p>Let’s have a look at the output images:</p>
+<p>Right click→ properties</p>
+<p><img src="./Untitled_1.png" alt="Untitled"></p>
+<p>Most of them are already in perfect condition: 300 dpi or higher, binary image with only 1 bit depth, which is good for the final pdf’s small volume.</p>
+<p>Of course, there would also be some exceptions, such as this one, with a significantly larger file size.</p>
+<p><img src="./Untitled_2.png" alt="Untitled"></p>
+<p>We just need to throw them all into Comic Enhancer Pro</p>
+<p><img src="./Untitled_3.png" alt="Untitled"></p>
+<p>Press on the button to process scanned books.</p>
+<p><img src="./Untitled_4.png" alt="Untitled"></p>
+<p>The best effect comes from curve. </p>
+<p><img src="./Untitled_5.png" alt="Untitled"></p>
+<p>X axis is the grayscale of original, while y is the projected new grayscale intensity. We need to suppress the tint gray that was the picture on the back side, while maintaining proper intensities on the characters.</p>
+<p><img src="./Untitled_6.png" alt="Untitled"></p>
+<p>Most of the gray suppressed to close to white, and the dark parts, text included, are also enhanced.</p>
+<p>The adjusting method is like adjusting a Bezier curve, intuitive enough.</p>
+<p><img src="./Untitled_7.png" alt="Untitled"></p>
+<p>In pursuit of extremely tiny file size, we only need binary image. Tick on the <code>shaking</code> check box to achieve decent (though limited) gray effect.</p>
+<p><img src="./Untitled_8.png" alt="Untitled"></p>
+<p>Let the batch begin. Some images might require an individual profile.</p>
+<p><img src="./Untitled_9.png" alt="Untitled"></p>
+<p>Launch FreePic2Pdf</p>
+<p><img src="./Untitled_10.png" alt="Untitled"></p>
+<p><img src="./Untitled_11.png" alt="Untitled"></p>
+<p><img src="./Untitled_12.png" alt="Untitled"></p>
+<p>Click Go, and be patient before it finishes.</p>
+<p><img src="./Untitled_13.png" alt="Untitled"></p>
+<p>Recognition results are quite impressive, we can hardly detect errors in the copied text. (Sumatra PDF, strongly recommended, btw)</p>
+<p><img src="./Untitled_14.png" alt="Untitled"></p>
+<p>Not perfect on English or Equations, but I’ll say it has exceed my anticipation. And the quality of pictures are unbelievable. </p>
+<p><img src="./Untitled_15.png" alt="Untitled"></p>
+<p><img src="./Untitled_16.png" alt="Untitled"></p>
+<p>Searching or annotating is more than usable, which <em>is</em> the purpose of our effort. (Drawboard PDF, also strongly recommended, btw)</p>
+<p><img src="./Untitled_17.png" alt="Untitled"></p>
+<p>File size dropped from 49MB to 35MB, the saving is not remarkable, because the original file was already doing a good job by making most of its pictures binary. </p>
+<p>One last thing, the index or bookmarks. it can be readily solved by PdgCntEditor.</p>
+<p><img src="./Untitled_18.png" alt="Untitled"></p>
+<p>Still very easy drag-and-drop, the original file has included a good index, we’ll make just make use of it.</p>
+<p><img src="./Untitled_19.png" alt="Untitled"></p>
+<p>Copy and paste — and done, yeah, it’s <em>that simple.</em></p>
+<p><img src="./Untitled_20.png" alt="Untitled"></p>
+<p>Sometimes you’ll need to specify the page number of the 1st page, but basically, that’s pretty much it.</p>
+<p><img src="./Untitled_21.png" alt="Untitled"></p>
+<p>Maybe we’ll open up a page to talk about <code>PdgCntEditor</code> some day.</p>
 
 </div> 
 
@@ -175,11 +201,16 @@
            
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="/2021/08/24/Git-SSH-Key/">Prev</a>
+                    <a href="/2021/09/02/Codec-and-Video-Encoding/">Prev</a>
                 </div>
             
         </div>
         <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/08/24/Git-SSH-Key/">Next</a>  
+                </div>  
             
         </div>
     </nav>
