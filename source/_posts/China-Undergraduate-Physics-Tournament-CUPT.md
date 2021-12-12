@@ -1,6 +1,6 @@
 ---
 title: China Undergraduate Physics Tournament (CUPT)
-date: 2021-08-15 11:54:48
+date: 2020-10-19 21:48:48
 updated: 2021-12-11 10:35:06
 tags: 
 - Physics

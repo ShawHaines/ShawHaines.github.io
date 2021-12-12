@@ -1,6 +1,6 @@
 ---
 title: Measurement of superconducting properties (Point-contact Spectrum)
-date: 2021-06-09 16:26:00
+date: 2020-11-05 11:13:00
 updated: 2021-12-12 22:29:53
 tags: 
 - Physics
