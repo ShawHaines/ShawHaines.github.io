@@ -21,6 +21,8 @@ $$
 2\Delta(0)=3.53 k_BT_C
 $$
 
+where $T_C$ is the critical temperature of a superconductor, and $\Delta$ is the superconducting energy gap.
+
 ## Models on Normal State & Superconductor Junction
 
 * Andreev Reflection
