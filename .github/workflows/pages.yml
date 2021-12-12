@@ -31,5 +31,5 @@ jobs:
           github_token: ${{ secrets.HEXO_DEPLOY_KEY }}
           publish_dir: ./public
           publish_branch: master  # deploying branch
-          user_name: ShawHaines
-          user_email: shawhaines@zju.edu.cn
+          # user_name: ShawHaines
+          # user_email: shawhaines@zju.edu.cn
