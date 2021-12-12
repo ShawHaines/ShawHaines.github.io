@@ -3,7 +3,7 @@
 language: en
 
 # header
-site_brand_name: Frame.
+site_brand_name: Shaw Haines
 
 logo_image:
   enable: false
@@ -11,8 +11,8 @@ logo_image:
 
 menu:
   Home: /
-  Archive: /archives/
-  Gallery: /categories/gallery/
+  Projects: /categories/gallery/
+  Blogs: /archives/
 
 # stylesheets loaded in the <head>
 stylesheets:
