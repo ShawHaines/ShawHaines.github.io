@@ -82,11 +82,16 @@ Watch [background Video](https://www.youtube.com/watch?v=I1vhRJo0Eik&list=PLyHSI
 
 ![](2021-08-14-12-08-25.png)
 
-Capture the contour of the vortex, than calculate its
+Extract the outline of the vortex, then calculate the Fourier coefficients of it with the given formula
 
 $$
 c_{n}=\frac{1}{2 \pi} \int_{0}^{2 \pi} r(\theta) e^{i n \theta} d \theta
 $$
+
+{% raw %}
+<video src="vortex_combined.mp4" type='video/mp4' controls='controls' width='100%' height='100%'>
+</video>
+{% endraw%}
 
 The Fourier coefficient $c_3$ increases over time, indicating a strengthening of of threefold symmetry. i.e., the shape of the vortex is becoming closer to a triangle (or triangular star)
 
