@@ -28,6 +28,8 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.HEXO_DEPLOY_KEY }}
           publish_dir: ./public
           publish_branch: master  # deploying branch
+          user_name: ShawHaines
+          user_email: shawhaines@zju.edu.cn
