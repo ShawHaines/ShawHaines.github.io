@@ -9,6 +9,8 @@ categories:
 featured_image: /img/1.jpg
 ---
 
+All the code used to generate the images and video have been pusblished to [Github](https://github.com/ShawHaines/SelfAssembly).
+
 ## Self Assembly
 
 Put a number of identical hard regular-shaped particles in a flat layer on top of a vibrating plate. Depending on the number of particles per unit area, they may or may not form an ordered crystal-like structure. [^1]
@@ -49,7 +51,6 @@ original
 
 After particle recognition & tracing
 
-
 {% raw %}
 <video src="https://user-images.githubusercontent.com/50012391/131789015-643344a1-b404-4893-a966-d0efef17706e.mp4" type='video/mp4' controls='controls' width='100%' height='100%'>
 </video>
@@ -62,8 +63,12 @@ superposition
 </video>
 {% endraw%}
 
-trace
+It's delightful to watch the particles leaving a trace on the plate:
 
+{% raw %}
+<video src="order_tracing_art.mp4" type='video/mp4' controls='controls' width='100%' height='100%'>
+</video>
+{% endraw%}
 
 ## Polygon Vortex
 
@@ -77,5 +82,12 @@ Watch [background Video](https://www.youtube.com/watch?v=I1vhRJo0Eik&list=PLyHSI
 
 ![](2021-08-14-12-08-25.png)
 
-Please use [Geogebra](https://www.geogebra.org/) to open and view the file `FFT/Fourier.ggb`
-The rest of the files are all MATLAB.
+Capture the contour of the vortex, than calculate its
+
+$$
+c_{n}=\frac{1}{2 \pi} \int_{0}^{2 \pi} r(\theta) e^{i n \theta} d \theta
+$$
+
+The Fourier coefficient $c_3$ increases over time, indicating a strengthening of of threefold symmetry. i.e., the shape of the vortex is becoming closer to a triangle (or triangular star)
+
+![](c3.png)
