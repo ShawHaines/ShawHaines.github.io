@@ -3,7 +3,7 @@
 language: en
 
 # header
-site_brand_name: Shaw Haines
+site_brand_name: Shaw
 
 logo_image:
   enable: false
@@ -13,6 +13,7 @@ menu:
   Home: /
   Projects: /categories/gallery/
   Blogs: /archives/
+  Resume: /Haohai_Shi_CV.pdf
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -29,19 +30,24 @@ date_format: MMM D, YYYY
 
 # profile
 profile:
-  title: Hi, this is Shaw. 
-  body: An undergraduate student at Zhejiang University.
-  image: /profile_cover.png
+  title: Hi, this is Haohai(Haines) Shi. 
+  body:
+    A senior student majoring in Physics at Zhejiang University.
+    I am now working at Prof. Haohua Wang's Group.
+    My research interest lies in superconducting quantum computing and quantum simulation.
+  image: /img/Shaw_Circular.png
+  
 
   links:
+    Resume: /resume/
     Blogs: /archives/
-    Projects: /categories/gallery
+    Projects: /categories/gallery/
 
 # footer
 footer:
   copyright_info:
     enable: true
-    author: Shaw Haines
+    author: Haines Shaw
 
   powered_by: # Powered by Hexo & Frame
     enable: true
