@@ -14,7 +14,7 @@ Currently, I am working at Prof. Haohua Wang's group, doing research on supercon
 * 🎓 Seeking opportunities for a Ph.D. study
 * 🌱 Learning methods to reduce microwave crosstalk
 * 💼 My [recent projects](/categories/gallery/)
-* 📋 My [CV/ Resume](#CV/-Resume)
+* 📋 My [CV/ Resume](#cv-resume)
 * ⚽ Fan of Arsenal, 🚲 enjoy in cycling
 
 ## CV/ Resume
