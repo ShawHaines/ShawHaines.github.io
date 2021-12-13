@@ -9,7 +9,9 @@
             <%=theme.profile.title%>
         </div>
         <div class="profile-body">
-            <%=theme.profile.body%>
+        <% for (var paragraph of theme.profile.body) {%>
+            <p><%=paragraph%></p>
+        <% }; %>
         </div>
         <% Object.keys(theme.profile.links).forEach(key => { %>
             <div class="profile-link">
