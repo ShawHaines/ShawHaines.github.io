@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Haohai(Haines) Shi">
+
+
+    <meta name="subtitle" content=":)">
+
+
+    <meta name="description" content="Haines Shi's Personal Website">
+
+
+
+
+
+<title>Scanning Probe Based on Tuning Fork | Haohai(Haines) Shi</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/frame.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+<script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            SHH
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Projects</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Blogs</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/About-Me">About Me</a>
+              </li> 
+                   
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Physics/">
+                            Physics
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Scanning Probe Based on Tuning Fork
+            
+            
+        </div>
+        <span class="post-date">
+            Jan 9, 2021
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="/img/Scanning%20demo.gif" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h1 id="introduction">Introduction</h1>
+<p>Point-contact methods</p>
+<ul>
+<li>Soft Point-contact</li>
+<li>Mechanical Point-contact</li>
+</ul>
+<p><img src="Soft_Mechanical.png" /></p>
+<p>Difficult to operate when faced with samples shown in (c)</p>
+<figure>
+<img src="sample.png" alt="Different Sample Surfaces" />
+<figcaption aria-hidden="true">Different Sample Surfaces</figcaption>
+</figure>
+<h1 id="methods">Methods</h1>
+<h2 id="device-apparatus-design">Device &amp; Apparatus Design</h2>
+<figure>
+<img src="Device.png" alt="Assembly of Scanning Probe Device" />
+<figcaption aria-hidden="true">Assembly of Scanning Probe
+Device</figcaption>
+</figure>
+<figure>
+<img src="Apparatus.png" alt="Apparatus" />
+<figcaption aria-hidden="true">Apparatus</figcaption>
+</figure>
+<h2 id="detection-of-resonance-frequency">Detection of Resonance
+Frequency</h2>
+<p>The electric properties of a tuning fork can be well described using
+simple RLC
+model.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+<p><img src="RLC%20Model.png" /></p>
+<p><span class="math display">\[
+\begin{gathered}
+\omega_{r}=2 \pi f_{r}=\frac{1}{\sqrt{L C}} \\
+Y(\omega)=\frac{I(\omega)}{U(\pi)}=i \omega C_{S}+\frac{1}{R+\frac{1}{i
+\omega C}+i \omega L} \\
+Y(f)=\frac{I(\omega)}{U(\pi)}=i 2 \pi f C_{S}+\frac{A_{0} \Delta
+f\left(\Delta f-2 i\left(f-f_{r}\right)\right)}{\Delta
+f^{2}+4\left(f-f_{r}\right)^{2}}
+\end{gathered}
+\]</span></p>
+<p>Using these formula to fit the measurement curve, we can recover the
+quality factor of the tuning fork.</p>
+<p><img src="Peak.png" /></p>
+<h2 id="engaging-detection">Engaging Detection</h2>
+<figure>
+<img src="Engaging%20Detection.png"
+alt="(a) shift on resonating frequency (b) the amplitude of voltage on versus steps of displacement in z direction" />
+<figcaption aria-hidden="true">(a) shift on resonating frequency (b) the
+amplitude of voltage on versus steps of displacement in <span
+class="math inline">\(z\)</span> direction</figcaption>
+</figure>
+<h2 id="controlling-strategy">Controlling Strategy</h2>
+<figure>
+<img src="Naive.png"
+alt="Naive Controlling Strategy that performs retraction on each step" />
+<figcaption aria-hidden="true">Naive Controlling Strategy that performs
+retraction on each step</figcaption>
+</figure>
+<figure>
+<img src="Naive_Labview.png"
+alt="Labview block diagrams of the naive program" />
+<figcaption aria-hidden="true">Labview block diagrams of the naive
+program</figcaption>
+</figure>
+<h3 id="improvement">Improvement</h3>
+<ul>
+<li>Eliminate retracting</li>
+<li>Change routing scheme to zig-zag</li>
+</ul>
+<figure>
+<img src="No%20Retract.png"
+alt="illustration of no retracting scheme" />
+<figcaption aria-hidden="true">illustration of no retracting
+scheme</figcaption>
+</figure>
+<p>Avoid discontinuities in <span class="math inline">\(x, y\)</span>
+direction.</p>
+<figure>
+<img src="Zig-Zag.png"
+alt="Straight-Forward routing scheme (left) vs. Zig-Zag routing scheme (right)" />
+<figcaption aria-hidden="true">Straight-Forward routing scheme (left)
+vs. Zig-Zag routing scheme (right)</figcaption>
+</figure>
+<h2 id="modular-design-developping">Modular Design &amp;
+Developping</h2>
+<figure>
+<img src="/img/Scanning%20demo.gif"
+alt="Debugging interface on zig-zag routing scheme" />
+<figcaption aria-hidden="true">Debugging interface on zig-zag routing
+scheme</figcaption>
+</figure>
+<figure>
+<img src="Modular.png"
+alt="Modular diagram of improved driver. Measuring has been packaged into subVI." />
+<figcaption aria-hidden="true">Modular diagram of improved driver.
+Measuring has been packaged into subVI.</figcaption>
+</figure>
+<h1 id="results">Results</h1>
+<p>We can recover the shape of a wire using the prototype scanning
+probe, indicating that the prototype has reached Micron-level
+resolution.</p>
+<img src="Wire.png" />
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style:none; padding-left: 0;">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span
+style="display: inline-block; vertical-align: top;">Kamra et al., “An
+All-Electrical Torque Differential Magnetometer Operating under Ambient
+Conditions.”</span><a href="#fnref:1" rev="footnote"> ↩︎</a>
+</li>
+</ol>
+</div>
+</div>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2021/03/01/HelloWorld/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2020/11/04/Measurement-of-superconducting-properties-Point-contact-Spectrum/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Haohai(Haines) Shi 石昊海 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+  </body>
+</html>
