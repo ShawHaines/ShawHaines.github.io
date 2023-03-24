@@ -3,7 +3,7 @@
 language: en
 
 # header
-site_brand_name: SHH
+site_brand_name: S.HH.
 
 logo_image:
   enable: false
@@ -30,10 +30,10 @@ date_format: MMM D, YYYY
 
 # profile
 profile:
-  title: Hi, this is Haohai(Haines) Shi, 石昊海.
+  title: Hi, my name is Haohai Shi (石昊海).
   body:
-    - A senior student majoring in Physics at Zhejiang University.
-    - Currently working at Prof. Haohua Wang's group, doing research on superconducting quantum computing and quantum simulation.
+    - 1st year Ph.D. student majoring in Physics at University of Maryland, College Park.
+    - Research interest is quantum computing and quantum simulation.
   image: /img/Shaw_Circular.png
   
 
@@ -41,14 +41,14 @@ profile:
     About Me: /About-Me/
     Blogs: /archives/
     Projects: /categories/gallery/
-    📧shawhaines@zju.edu.cn: mailto:shawhaines.zju.edu.cn
+    📧hhshi@umd.edu: mailto:hhshi@umd.edu
     Github: https://github.com/ShawHaines
 
 # footer
 footer:
   copyright_info:
     enable: true
-    author: Haohai(Haines) Shi 石昊海
+    author: Haohai Shi 石昊海
 
   powered_by: # Powered by Hexo & Frame
     enable: true
