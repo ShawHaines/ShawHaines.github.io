@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Haohai(Haines) Shi
+title: Haohai Shi
 subtitle: ':)'
-description: "Haines Shi's Personal Website"
+description: "Haohai Shi's Personal Website"
 keywords:
-author: Haohai(Haines) Shi
+author: Haohai Shi
 language: en
 timezone: 'Asia/Shanghai'
 
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 marked:
   prependRoot: true
   postAsset: true
