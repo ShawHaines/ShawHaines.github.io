@@ -6,7 +6,7 @@ tags:
 - Physics
 categories: 
 - gallery
-featured_image: /img/1.jpg
+featured_image: /img/Crystal.jpg
 ---
 
 All the code used to generate the images and video have been pusblished to [Github](https://github.com/ShawHaines/SelfAssembly).

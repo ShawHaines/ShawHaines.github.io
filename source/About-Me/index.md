@@ -19,6 +19,6 @@ Hello, I am Haohai Shi (石昊海), a 1st year Ph.D. student majoring in Physics
 
 ## CV/ Resume
 
-Click [Here](/Haohai_Shi_CV.pdf) to download my CV in `.pdf` format.
+Click [Here](/Haohai_Shi_CV_2023.pdf) to download my CV in `.pdf` format.
 
-{% pdf /Haohai_Shi_CV.pdf %}
+{% pdf /Haohai_Shi_CV_2023.pdf %}
