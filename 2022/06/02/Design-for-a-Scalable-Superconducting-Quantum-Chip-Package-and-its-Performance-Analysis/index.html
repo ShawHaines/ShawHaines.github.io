@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Haohai Shi">
+
+
+    <meta name="subtitle" content=":)">
+
+
+    <meta name="description" content="Haohai Shi's Personal Website">
+
+
+
+
+
+<title>Design for a Scalable Superconducting Quantum Chip Package and its Performance Analysis | Haohai Shi</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/frame.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+<script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            S.HH.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Projects</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Blogs</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/About-Me">About Me</a>
+              </li> 
+                   
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Physics/">
+                            Physics
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Design for a Scalable Superconducting Quantum Chip Package and its Performance Analysis
+            
+            
+        </div>
+        <span class="post-date">
+            Jun 2, 2022
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="/img/package.png" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="why-superconducting-quantum-chip-package">Why Superconducting
+Quantum Chip Package?</h2>
+<ul>
+<li>EM noise shielding</li>
+<li>Microwave signal fan-out</li>
+<li>Securing and protecting the chip</li>
+</ul>
+<p>Design Requirement for the package:</p>
+<ul>
+<li>Modular &amp; scalable</li>
+<li>High level of integration</li>
+<li>Low dissipation rate</li>
+<li>High fidelity</li>
+</ul>
+<h2 id="designing-principles">Designing Principles</h2>
+<p>Engineering concerns:</p>
+<ul>
+<li>Low dissipation rate
+<ul>
+<li>Material selection</li>
+<li>Supression of coupling to vibration mode
+<ul>
+<li>Cavity mode</li>
+<li>PCB chip mode</li>
+</ul></li>
+</ul></li>
+<li>High fidelity
+<ul>
+<li>Signal integrity engineering
+<ul>
+<li>Impedance matching</li>
+<li>Reducing crosstalk</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="cavity-mode">Cavity Mode</h3>
+<p><img src="Pasted%20image%2020230422152012.png" /></p>
+<p>Half-integer times base frequency.</p>
+<h3 id="pcb-mode">PCB Mode</h3>
+<p><img src="PCB.gif" /></p>
+<p><span class="math display">\[f_{PCB}\approx 10.4 \rm{GHz},
+Q=55\]</span></p>
+<h3 id="impedance-matching">Impedance Matching</h3>
+<p><span class="math inline">\(Z=\sqrt{L/C}\approx 200\Omega
+\rightarrow\)</span> 3-4 wirebonds to match standard impedance <span
+class="math inline">\(Z_0=50\Omega\)</span></p>
+<p>Where</p>
+<p><span class="math display">\[L\approx \frac{\mu_0l}{2\pi}
+\rm{arccosh}(2h/d)\]</span> <span class="math display">\[C\approx
+\frac{2\pi l \varepsilon_0}{\rm{arccosh(h/d)}}\]</span></p>
+<p><img src="Pasted%20image%2020230422152834.png" /></p>
+<p>Verifying impedance by Time-Domain Reflectometry (TDR), matching is
+optimized for 3 wires diameter <span class="math inline">\(d=50\mu
+m\)</span>.</p>
+<p><img src="Pasted%20image%2020230422153542.png" /></p>
+<h3 id="grouding-wires-for-crosstalk-supression">Grouding wires for
+crosstalk supression</h3>
+<p><img src="Pasted%20image%2020230422153745.png" /></p>
+<p>Saturation after 1 grounding wire.</p>
+<h2 id="d-pogo-pin-based-wiring-package-design">3D Pogo-pin-based Wiring
+Package Design</h2>
+<p><img src="Pasted%20image%2020230422154452.png" /></p>
+<h3 id="pogo-pin-based-3d-wiring">Pogo-pin-based 3D wiring</h3>
+<p><img src="Pasted%20image%2020230422222233.png" /></p>
+<h3 id="scalable-quantum-chip-design">Scalable Quantum Chip Design</h3>
+<ul>
+<li><span class="math inline">\(3\times 3\)</span> cell forming a
+scalable 2D array</li>
+<li>36 tunable transmon qubits</li>
+<li>Through silicon via (TSV) for front and back surface</li>
+</ul>
+<p><img src="Pasted%20image%2020230422223447.png" /></p>
+<ul>
+<li>+2MHz ~ -40MHz tunable coupling strength</li>
+<li>multiplexed readin and readout.</li>
+</ul>
+<h3 id="supression-of-chip-mode">Supression of Chip Mode</h3>
+<p><img src="Pasted%20image%2020230422223855.png" /></p>
+<p>With the added central pillar, the band becomes much flatter, and
+cut-off freqency greatly increased to above 30GHz.</p>
+<h3 id="supression-of-crosstalk">Supression of crosstalk</h3>
+<p><img src="Pasted%20image%2020230422224105.png" /></p>
+<p>Coaxial microwave cable, nearest neighbor crosstalk &lt; -100dB.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/11/04/RDPWrap/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Haohai Shi 石昊海 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+  </body>
+</html>
